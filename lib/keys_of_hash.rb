@@ -2,7 +2,7 @@ class Hash
   def keys_of(*argument)
     ans = []
     argument.each do |element|
-     map do |key, value|
+     element.each do |key, value|
           if value == element
             ans.push(key)
         end
