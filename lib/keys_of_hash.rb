@@ -1,14 +1,13 @@
 class Hash
-  def keys_of(hash, *values)
+  def keys_of(*argument)
     ans = []
-    values.each do |each_value|
-      hash.each do |key, value|
-        if key[value] == each_value
-          ans.push(key)
+    argument.each do |element|
+     map do |key, value|
+          if value == element
+            ans.push(key)
         end
       end
     end
-  end
       ans
   end
 end
